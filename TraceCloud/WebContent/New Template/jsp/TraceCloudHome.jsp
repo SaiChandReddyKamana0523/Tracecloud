@@ -9,7 +9,7 @@
       <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
       <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/TraceCloudHomePage.css" />
+      <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/New Template/css/TraceCloudHomePage.css" />
       <script type="text/javascript" src="${pageContext.request.contextPath}/js/TracecloudHome.js"></script>
      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@200&family=Noto+Sans&family=Open+Sans:wght@300&family=Teko:wght@300&display=swap" rel="stylesheet">
    </head>
@@ -20,7 +20,7 @@
          <div class="" style="width: 100%;">
             <div class="row" style="width:100%;margin:0px;padding-top: 15px;">
             <div class="col-md-10">
-              <img src="${pageContext.request.contextPath}/Images/TracecloudLogo.png" style="float:inherit"/>
+              <img src="${pageContext.request.contextPath}/New Template/Images/TracecloudLogo.png" style="float:inherit"/>
               </div>
                <div class="col-md-2">
                <div id="menuToggle">
