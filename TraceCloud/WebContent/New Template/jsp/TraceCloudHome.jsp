@@ -10,12 +10,11 @@
       <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/New Template/css/TraceCloudHomePage.css" />
-      <script type="text/javascript" src="${pageContext.request.contextPath}/js/TracecloudHome.js"></script>
      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@200&family=Noto+Sans&family=Open+Sans:wght@300&family=Teko:wght@300&display=swap" rel="stylesheet">
    </head>
    <script>
 </script>
-   <body onload="initQuoteCarousel()">
+   <body>
   <nav role="navigation" style="width: 100%;position: fixed;z-index: 999;background: white;border-bottom:1px solid #f3f3f3;padding-bottom: 10px;">
          <div class="" style="width: 100%;">
             <div class="row" style="width:100%;margin:0px;padding-top: 15px;">
@@ -29,13 +28,12 @@
                      <span style="margin-left: 200px; color: #232323;"></span>
                      <span style="margin-left: 200px; color: #232323;"></span>
                      <span style="margin-left: 200px; color: #232323;"></span>
-                   
                      <ul id="menu">
-                        <li class="menu-list"><a href="${pageContext.request.contextPath}/jsp/TracecloudFeatures.jsp"><i class="fa fa-home" aria-hidden="true"></i>&#160; Features</a></li>
-                        <li class="menu-list"><a href="${pageContext.request.contextPath}/jsp/TracecloudPricing.jsp"><i class="fa fa-usd" aria-hidden="true"></i> &#160; Pricing</a></li>
-                        <li class="menu-list"><a href="${pageContext.request.contextPath}/jsp/TracecloudDocumentation.jsp"><i class="fa fa-file-word-o" aria-hidden="true"></i>&#160; Documentation</a></li>
-                        <li class="menu-list"><a href="${pageContext.request.contextPath}/jsp/TracecloudJira.jsp"><i class="fab fa-jira" aria-hidden="true"></i>&#160; Jira</a></li>
-                        <li class="menu-list"><a href="${pageContext.request.contextPath}/jsp/TracecloudLoginPage.jsp"><i class="fa fa-sign-in" aria-hidden="true"></i>&#160; Log In</a></li>
+                        <li class="menu-list"><a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudFeatures.jsp"><i class="fa fa-home" aria-hidden="true"></i>&#160; Features</a></li>
+                        <li class="menu-list"><a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudPricing.jsp"><i class="fa fa-usd" aria-hidden="true"></i> &#160; Pricing</a></li>
+                        <li class="menu-list"><a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudDocumentation.jsp"><i class="fa fa-file-word-o" aria-hidden="true"></i>&#160; Documentation</a></li>
+                        <li class="menu-list"><a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudJira.jsp"><i class="fab fa-jira" aria-hidden="true"></i>&#160; Jira</a></li>
+                        <li class="menu-list"><a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudLoginPage.jsp"><i class="fa fa-sign-in" aria-hidden="true"></i>&#160; Log In</a></li>
                      </ul>
                      </div>
             </div>
@@ -51,7 +49,7 @@
      </div>
      <div class="row">
      <div class="col-md-6">
-      <a href="" class="requestBlue">Request Demo</a> <a href="${pageContext.request.contextPath}/jsp/GetStarted.jsp" class="getOrange">Get Started</a>
+      <a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudDemo.jsp" class="requestBlue">Request Demo</a> <a href="${pageContext.request.contextPath}/New Template/jsp/GetStarted.jsp" class="getOrange">Get Started</a>
      </div>
      </div>
    </div>
@@ -122,24 +120,24 @@
                 </div>
             </div>
             <div class="col-md-12" style="text-align:center">
-             <a href="${pageContext.request.contextPath}/jsp/TracecloudReviews.jsp" class="requestBlue" style="padding:10px;margin:0px;float:none">More Customer Reviews</a>
+             <a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudReviews.jsp" class="requestBlue" style="padding:10px;margin:0px;float:none">More Customer Reviews</a>
             </div>
         </div>
    </div>
    
   <div class="featuresSection" style="width:98%;display:inline-block;padding-bottom:50px;padding-top:30px">
     <div class="col-md-4">
-         <img src="${pageContext.request.contextPath}/Images/Requirements-Management.png" style="height:100px;padding-left:20px;display:block"/>
+         <img src="${pageContext.request.contextPath}/New Template/Images/Requirements-Management.png" style="height:100px;padding-left:20px;display:block"/>
          <h3 style="text-align: left;padding-left: 20px;font-family: anton;color:#191919">Requirements Management</h3>
          <p style="text-align: justify;padding-left: 20px;font-family: mulish;font-weight: 600;">Manage requirements and end-to-end traceability across the lifecycle, with flexibility to support various engineering disciplines and development methodologies. Align stakeholders, improve efficiency, manage change and prove compliance.</p>
     </div>
     <div class="col-md-4">
-         <img src="${pageContext.request.contextPath}/Images/Test-Management.png" style="height:100px;padding-left:20px;display:block"/>
+         <img src="${pageContext.request.contextPath}/New Template/Images/Test-Management.png" style="height:100px;padding-left:20px;display:block"/>
          <h3 style="text-align: left;padding-left: 20px;font-family: anton;color:#191919">Test Management</h3>
          <p style="text-align: justify;padding-left: 20px;font-family: mulish;font-weight: 600;">Define, organize and execute requirements-based test plans and test cases to ensure quality and compliance. Streamline reviews and approvals, execute manual testing and integrate with trusted test execution and automation solutions.</p>
     </div>
     <div class="col-md-4">
-    <img src="${pageContext.request.contextPath}/Images/Risk-Management.png" style="height:100px;padding-left:20px;display:block"/>
+    <img src="${pageContext.request.contextPath}/New Template/Images/Risk-Management.png" style="height:100px;padding-left:20px;display:block"/>
          <h3 style="text-align: left;padding-left: 20px;font-family: anton;color:#191919">Risk Management</h3>
          <p style="text-align: justify;padding-left: 20px;font-family: mulish;font-weight: 600;">Perform risk management throughout the development cycle to ensure quality and safety. Integrate Risk and hazard analysis into the design process to ensure visibility into risk-related requirements and mitigations.</p>
     </div>

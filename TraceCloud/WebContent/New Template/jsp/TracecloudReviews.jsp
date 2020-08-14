@@ -12,15 +12,23 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="${pageContext.request.contextPath}/css/TracecloudReviews.css"/>
+      <link rel="stylesheet" href="${pageContext.request.contextPath}/New Template/css/TracecloudReviews.css"/>
+      <script>
+      function showAllReviews(){
+          document.getElementById("customerReviewsCarousel").style.display = "none";
+          document.getElementById("allCustomerReviewsBtn").style.display = "none";
+          document.getElementById("allCustomerReviews").style.display = "block";
+          window.scrollTo(0, 0); 
+         }
+      </script>
    </head>
    <body>
       <nav role="navigation" style="width: 100%;position: fixed;z-index: 999;background: white;border-bottom:1px solid #f3f3f3;padding-bottom: 10px;">
          <div class="" style="width: 100%;">
             <div class="row" style="width:100%;margin:0px;padding-top: 15px;">
                <div class="col-md-10">
-                  <a href="${pageContext.request.contextPath}/jsp/TraceCloudHome.jsp" >
-                  <img src="${pageContext.request.contextPath}/Images/TracecloudLogo.png" style="float:inherit"/>
+                  <a href="${pageContext.request.contextPath}/New Template/jsp/TraceCloudHome.jsp" >
+                  <img src="${pageContext.request.contextPath}/New Template/Images/TracecloudLogo.png" style="float:inherit"/>
                   </a>
                </div>
                <div class="col-md-2">
@@ -30,10 +38,10 @@
                      <span style="margin-left: 200px; color: #232323;"></span>
                      <span style="margin-left: 200px; color: #232323;"></span>
                      <ul id="menu">
-                        <li class="menu-list"><a href="${pageContext.request.contextPath}/jsp/TracecloudPricing.jsp"><i class="fa fa-usd" aria-hidden="true"></i> &#160; Pricing</a></li>
-                        <li class="menu-list"><a href="${pageContext.request.contextPath}/jsp/TracecloudDocumentation.jsp"><i class="fa fa-file-word-o" aria-hidden="true"></i>&#160; Documentation</a></li>
-                        <li class="menu-list"><a href="${pageContext.request.contextPath}/jsp/TracecloudJira.jsp"><i class="fab fa-jira" aria-hidden="true"></i>&#160; Jira</a></li>
-                        <li class="menu-list"><a href="${pageContext.request.contextPath}/jsp/TracecloudLoginPage.jsp"><i class="fa fa-sign-in" aria-hidden="true"></i>&#160; Log In</a></li>
+                        <li class="menu-list"><a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudPricing.jsp"><i class="fa fa-usd" aria-hidden="true"></i> &#160; Pricing</a></li>
+                        <li class="menu-list"><a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudDocumentation.jsp"><i class="fa fa-file-word-o" aria-hidden="true"></i>&#160; Documentation</a></li>
+                        <li class="menu-list"><a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudJira.jsp"><i class="fab fa-jira" aria-hidden="true"></i>&#160; Jira</a></li>
+                        <li class="menu-list"><a href="${pageContext.request.contextPath}/New Template/jsp/TracecloudLoginPage.jsp"><i class="fa fa-sign-in" aria-hidden="true"></i>&#160; Log In</a></li>
                      </ul>
                   </div>
                </div>
@@ -52,7 +60,7 @@
                         <tbody>
                            <tr>
                               <td colspan="2" style="">
-                                 <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> <strong>Peter S. Director - Technical</strong>
+                                 <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> <strong>Peter S. Director - Technical</strong>
                                  <strong>Transportation/Trucking/Railroad, 501-1000 employees Used the software for: 2+ years</strong>
                               </td>
                            </tr>
@@ -97,7 +105,7 @@
                         <tbody>
                            <tr>
                               <td colspan="2" >
-                                <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">  <strong>Justin R. Civil Engineer</strong>
+                                <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">  <strong>Justin R. Civil Engineer</strong>
                                  <strong>Civil Engineering, 10,001+ employees Used the software for: 2+ years</strong>
                               </td>
                            </tr>
@@ -140,7 +148,7 @@
    <tbody>
       <tr>
          <td colspan="2" >
-         <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
+         <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
             <strong>Deepa S. Senior Engineer </strong>
             <strong> Transportation/Trucking/Railroad, 501-1000 employees
 Used the software for: 6-12 months</strong>
@@ -187,7 +195,7 @@ Used the software for: 6-12 months</strong>
    <tbody>
       <tr>
          <td colspan="2" >
-         <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
+         <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
             <strong> Angel J.
 CDS</strong>
             <strong> Unspecified
@@ -233,7 +241,7 @@ Used the software for: 2+ years</strong>
    <tbody>
       <tr>
          <td colspan="2" >
-         <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
+         <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
             <strong> Bharat S.
 Unspecified
 </strong>
@@ -278,7 +286,7 @@ Unspecified
    <tbody>
       <tr>
          <td colspan="2" >
-         <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
+         <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
             <strong> Peter B.
 IT Consultant</strong>
             <strong>Environmental Services, 1001-5000 employees
@@ -325,7 +333,7 @@ Used the software for: 1-2 years </strong>
    <tbody>
       <tr>
          <td colspan="2" >
-         <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
+         <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> 
             <strong>  Fahad M. Quality Program Manager </strong>
             <strong>Construction, 10,001+ employees
 Used the software for: 2+ years </strong>
@@ -373,7 +381,7 @@ Used the software for: 2+ years </strong>
    <tbody>
       <tr>
          <td colspan="2" >
-            <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> <strong>Andy D.
+            <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> <strong>Andy D.
 Principal Consultant
  </strong>
             <strong> Automotive, 1-10 employees
@@ -419,7 +427,7 @@ Used the software for: 1-2 years</strong>
    <tbody>
       <tr>
          <td colspan="2">
-           <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">  <strong> Bill M.
+           <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">  <strong> Bill M.
 System Engineer
 </strong>
             <strong> Electrical/Electronic Manufacturing, 51-200 employees
@@ -465,7 +473,7 @@ Used the software for: 2+ years</strong>
    <tbody>
       <tr>
          <td colspan="2" >
-           <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">  <strong> Abuzar M.
+           <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">  <strong> Abuzar M.
 Systems Engineer
  </strong>
             <strong>Construction, 201-500 employees
@@ -510,7 +518,7 @@ Used the software for: 6-12 months </strong>
    <tbody>
       <tr>
          <td colspan="2" >
-          <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">   <strong>
+          <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">   <strong>
 Dustin M.
 Senior Field Engineer
  </strong>
@@ -558,7 +566,7 @@ Used the software for: 6-12 months </strong>
    <tbody>
       <tr>
          <td colspan="2" >
-          <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">   <strong>Verified Customer
+          <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">   <strong>Verified Customer
 </strong>
             <strong>Hospital & Health Care, 11-50 employees
 Used the software for: 6-12 months </strong>
@@ -606,7 +614,7 @@ Used the software for: 6-12 months </strong>
    <tbody>
       <tr>
          <td colspan="2" >
-           <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">  <strong> Naren S.
+           <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">  <strong> Naren S.
 Product Manager
 </strong>
             <strong> Computer Software, 5001-10,000 employees
@@ -653,7 +661,7 @@ Used the software for: 2+ years</strong>
    <tbody>
       <tr>
          <td colspan="2" >
-          <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">   <strong> Brady C.
+          <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;">   <strong> Brady C.
 VP Client Solutions
 </strong>
             <strong>Marketing and Advertising, 201-500 employees
@@ -701,7 +709,7 @@ Used the software for: Less than 6 months </strong>
    <tbody>
       <tr>
          <td colspan="2" >
-            <img src="${pageContext.request.contextPath}/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> <strong> Sigma P.
+            <img src="${pageContext.request.contextPath}/New Template/Images/customer-review.png" alt="User 1" class="review_photo" style=" height: 7.5rem;width: 7.5rem;border-radius: 50%;margin-right: 1rem;"> <strong> Sigma P.
 Graduate Engineer
 </strong>
             <strong> Unspecified
@@ -775,28 +783,28 @@ Used the software for: Unspecified</strong>
                      <div class="item carousel-item active">
                         <div class="row">
                            <div class="col-sm-12">
-                              <img src="${pageContext.request.contextPath}/Images/Review1.png" style="height: auto;width: 100%;"/>
+                              <img src="${pageContext.request.contextPath}/New Template/Images/Review1.png" style="height: auto;width: 100%;"/>
                            </div>
                         </div>
                      </div>
                      <div class="item carousel-item">
                         <div class="row">
                            <div class="col-sm-12">
-                              <img src="${pageContext.request.contextPath}/Images/Review2.png" style="height: auto;width: 100%;"/>
+                              <img src="${pageContext.request.contextPath}/New Template/Images/Review2.png" style="height: auto;width: 100%;"/>
                            </div>
                         </div>
                      </div>
                      <div class="item carousel-item">
                         <div class="row">
                            <div class="col-sm-12">
-                              <img src="${pageContext.request.contextPath}/Images/Review3.png" style="height: auto;width: 100%;"/>
+                              <img src="${pageContext.request.contextPath}/New Template/Images/Review3.png" style="height: auto;width: 100%;"/>
                            </div>
                         </div>
                      </div>
                      <div class="item carousel-item">
                         <div class="row">
                            <div class="col-sm-12">
-                              <img src="${pageContext.request.contextPath}/Images/Review4.png" style="height: auto;width: 100%;"/>
+                              <img src="${pageContext.request.contextPath}/New Template/Images/Review4.png" style="height: auto;width: 100%;"/>
                            </div>
                         </div>
                      </div>
@@ -816,14 +824,7 @@ Used the software for: Unspecified</strong>
          <div class="row">
             <div class="col-sm-12" style="text-align:center">
                <a onclick="showAllReviews()" style="text-decoration:none;font-size: 16px; font-family: 'Open Sans', Arial, sans-serif;font-weight: 600;text-transform: uppercase;letter-spacing: 0.18rem;height: 2.75rem;background-color: rgb(28, 111, 209);color: rgb(255, 255, 255);cursor: pointer;order-style: solid;border-radius: 200px;border-color: transparent;border-width: 2px;padding: 9px 14px 9px 18px;margin: 4px;">Read More Reviews</a>
-               <script>
-                  function showAllReviews(){
-                   document.getElementById("customerReviewsCarousel").style.display = "none";
-                   document.getElementById("allCustomerReviewsBtn").style.display = "none";
-                   document.getElementById("allCustomerReviews").style.display = "block";
-                   window.scrollTo(0, 0); 
-                  }
-               </script>
+               
             </div>
          </div>
       </div>
